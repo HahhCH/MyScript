@@ -16,4 +16,6 @@ var body = $response.body
     .replace(/showCount = \d+/, "showCount = 0")
     .replace(/\"S\":\"LTQ=\"/, "\"S\":\"MTAw\"")
     .replace(/\"vipStatus\":0/, "\"vipStatus\":1")
+    .replace("\"status\":0", "\"status\":1")
+    .replace("\"desc\":\"未认证\"", "\"desc\":\"已认证\"")
 $done({ body });
