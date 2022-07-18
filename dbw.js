@@ -10,7 +10,7 @@ $.Cookie = $.read("dbwCookie");
   }
   if ($.Cookie != undefined) {
     var i = 0;
-    while (i < 35) {
+    while (i < 15) {
     await checkin();
     await showmsg();
     i++}
